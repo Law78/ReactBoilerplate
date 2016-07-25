@@ -9,7 +9,7 @@ module.exports = {
     root: __dirname,
     // definisco un oggetto alias, in cui inserisco il path (dalla root) dei miei componenti
     alias: {
-
+      //Main: 'app/components/Main.jsx',
     },
     // In questo modo mi evito di specificare l'estensione nei require ;)
     extensions: ['', '.js', '.jsx']
@@ -29,5 +29,7 @@ module.exports = {
         exclude: /(node_modules|bower_components)/
       }
     ]
-  }
+  },
+  // CONFIGURO SOURCE-MAP:
+  devtool: 'cheap-module-eval-source-map'
 };
